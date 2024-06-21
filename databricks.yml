@@ -1,0 +1,17 @@
+# This is a Databricks asset bundle definition for sat_declaraciones.
+# See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
+bundle:
+  name: dab_bimbo
+  #git:
+  #  origin_url: https://github.com/danielp-db/CentralizedMLOps
+  #  branch: main
+
+targets:
+  PROD:
+    default: true
+    workspace:
+      root_path: /Workspace/Users/daniel.perez@databricks.com/dab_bimbo
+      file_path: /Workspace/Users/daniel.perez@databricks.com/dab_bimbo/files
+
+include:
+  - ../codigo/*.yml
